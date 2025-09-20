@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiergeräusch-Überraschung</title>
+</head>
+<body>
+    <h1>Überraschung!</h1>
+    <p>Ein zufälliges Tiergeräusch wird abgespielt.</p>
+    <script>
+        const sounds = [
+            'https://drive.google.com/uc?export=download&id=1MRBURNBxj_2Q6aUiw0FMWoaTvw892DFZ',
+            'https://drive.google.com/uc?export=download&id=1KichwYrvBl-1iTP3OuQGI6GDWZB3ZOJy',
+            'https://drive.google.com/uc?export=download&id=1y3Oqh9ZuUeX6LzMMbNSiwgz6u8bzT3vi',
+            'https://drive.google.com/uc?export=download&id=1hPQrq68hxc-1bYuSQqeXLLB4vz_u7wfQ',
+            'https://drive.google.com/uc?export=download&id=19-FopJkIBuo_lMrXLJ4VmNH7fpNc5-iE',
+            'https://drive.google.com/uc?export=download&id=1TQzj8h0nXtWlCeqB77Mrn2fgytqYQBlh',
+            'https://drive.google.com/uc?export=download&id=1u3vPcKiFaalpNPdZM1SVeWOXiAJY88MK',
+            'https://drive.google.com/uc?export=download&id=12MnwjfN4xjeBGiLYdxPc9PfWe81v6LV0',
+            'https://drive.google.com/uc?export=download&id=1wiS5UfMk-mHM62C83-YbHDj-7Lc_dg8w',
+            'https://drive.google.com/uc?export=download&id=1Blgp_2MAWzFBrm_mFZ-YsrPIOlLziINZ',
+            'https://drive.google.com/uc?export=download&id=14_8-3O9E6aNTbaC0Ch9WfRTERQrejAQu',
+            'https://drive.google.com/uc?export=download&id=1fGKiZ0eocM_xA9ABvGTx-ozA2oShebdG',
+            'https://drive.google.com/uc?export=download&id=1fGKiZ0eocM_xA9ABvGTx-ozA2oShebdG',
+            'https://drive.google.com/uc?export=download&id=1uWrxyq0PIQVj8_AgU4Z3C6P_keshh8mi'
+        ];
+
+        const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+        const audio = new Audio(randomSound);
+        audio.play();
+    </script>
+</body>
+</html>
